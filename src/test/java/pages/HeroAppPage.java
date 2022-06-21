@@ -38,15 +38,17 @@ public class HeroAppPage {
     @FindBy(id = "hot-spot")
     public WebElement rectangleBox;
 
-    @FindBy(css = "#login input")
-    public List<WebElement> usernamePasswordLoginBoxes;
+    @FindBy(id = "username")
+    public WebElement usernameInputBox;
 
-    @FindBy(css = "#login button")
+    @FindBy(id = "password")
+    public WebElement passwordInputBox;
+
+    @FindBy(css = ".radius")
     public WebElement loginButton;
 
-    @FindBy(id = "flash")
-    public WebElement invalidMessage;
-
+    @FindBy(id = "flash-messages")
+    public WebElement loginErrorMessage;
 
 
     public void clickOnCategoryLink(String linkText){
