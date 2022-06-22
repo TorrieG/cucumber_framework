@@ -24,7 +24,7 @@ public class BaseSteps {
     @Then("user should see {string} in the url")
     public void user_should_see_in_the_url(String key) {
         for(String word : key.split(" ")){
-            Assert.assertTrue(driver.getCurrentUrl().contains(word));
+            Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains(word.toLowerCase()));
         }
     }
 

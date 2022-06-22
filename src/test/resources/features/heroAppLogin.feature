@@ -1,4 +1,4 @@
-@Login @Smoke
+@Smoke
 Feature: Hero App Login Functionality
 
   Background:

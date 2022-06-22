@@ -10,7 +10,7 @@ public class Hooks {
 
     @After
     public void teardown(Scenario scenario){
-        System.out.println("Scenario = " + scenario.getName() + " status = " +  scenario.getStatus());
+        System.out.println("Scenario = " + scenario.getName() + "\nStatus = " +  scenario.getStatus());
         try{
             if(scenario.isFailed()){
                 byte[] screenshot = ((TakesScreenshot)Driver.getDriver())

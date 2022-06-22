@@ -1,6 +1,6 @@
+@Regression
 Feature: Wiki Search Functionality
 
-  @Wiki
   Scenario Outline: Validate Wiki search
     Given user navigates to "https://www.wikipedia.org/"
     When user searches for "<key>" on Wikipedia
@@ -11,7 +11,7 @@ Feature: Wiki Search Functionality
       | key              |
       | Elon Musk        |
       | Bill Gates       |
-      | Johnny Depp       |
+      | Johnny Depp      |
       | Post Malone      |
       | Jack Harlow      |
       | Lil Baby         |
